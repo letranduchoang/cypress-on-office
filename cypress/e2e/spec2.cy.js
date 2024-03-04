@@ -19,7 +19,8 @@ describe('My First Test Suite', function () {
         cy.get('@productLocator').find('.product').eq(2).contains('ADD TO CART').click()
 
 
-
+        cy.get('.cart-icon').click()
+        cy.get('.cart-preview').find('.action-block').find('button').click()
 
     })
 
