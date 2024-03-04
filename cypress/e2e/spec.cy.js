@@ -63,7 +63,7 @@ describe('My First Test Suite', function () {
 
         cy.get('#search-field').should('not.have.class', 'search')
 
-        cy.get('.wrapperTwo').find('tbody > :nth-child(1) > :nth-child(2)').should('have.text', 'a')
+        cy.get('.wrapperTwo').find('tbody > :nth-child(1) > :nth-child(2)').should('have.text', 'abc')
 
 
 
