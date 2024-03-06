@@ -24,6 +24,7 @@ describe('My First Test Suite', function () {
         cy.get('.container').contains('Place Order').click()
         cy.get('select').select(2)
         cy.get('.chkAgree').click()
+        cy.get('.wrapperTwo').should('have.attr')
         cy.get('button').click()
 
 
