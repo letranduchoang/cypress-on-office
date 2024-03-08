@@ -25,10 +25,9 @@ describe('My First Test Suite', function () {
         cy.get('select').select(2)
 
 
-        cy.get('.wrapperTwo').should('have.attr')
 
         cy.get('.chkAgree').check().should('be.checked').and('have.value', 'on')
-
+        //cy.get('.chkAgree').uncheck().should('not.be.checked')
         cy.get('button').click()
 
 
