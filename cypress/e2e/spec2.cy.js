@@ -23,8 +23,12 @@ describe('My First Test Suite', function () {
         cy.get('.cart-preview').find('.action-block').find('button').click()
         cy.get('.container').contains('Place Order').click()
         cy.get('select').select(2)
-        cy.get('.chkAgree').click()
+
+
         cy.get('.wrapperTwo').should('have.attr')
+
+        cy.get('.chkAgree').check().should('be.checked').and('have.value', 'on')
+
         cy.get('button').click()
 
 
