@@ -66,7 +66,7 @@ describe('My First Test Suite', function () {
         cy.get('.wrapperTwo').find('tbody > :nth-child(1) > :nth-child(2)').should('have.text', 'abcx')
 
 
-        //fixture
+        //fixturesds
 
     })
 
